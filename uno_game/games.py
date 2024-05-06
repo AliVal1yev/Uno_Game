@@ -16,6 +16,8 @@ class Uno:
     
     def get_next_move(self):
         self.turn += 1
+        if self.turn == len(self.players):
+            self.reset_turn()
         self.moves_count += 1
 
     def get_next_player(self):

@@ -98,7 +98,9 @@ while True:
         continue
         
     idx = result - 1
-
+    if not 0 <= idx <= len(current_player.hands)-1:
+        input("Enter valid number")
+        continue
     player_card = current_player.get_card(idx)
 
     is_valid_card = table.check_card_validness(player_card)
