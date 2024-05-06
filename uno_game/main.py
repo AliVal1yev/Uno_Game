@@ -85,7 +85,7 @@ while True:
     print(table.get_top_card())
 
     current_player = game.get_current_player()
-    input(f"{current_player}'s turn. Gozlerivizi yumun!")
+    input(f"{current_player}'s turn. Gozlerinizi yumun!")
 
     for n, card in enumerate(current_player.hands, start=1):
         print(f"{n}. {card}")
