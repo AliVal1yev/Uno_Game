@@ -47,10 +47,10 @@ def check_choice(choice):
     if choice == "0":
         draw_card(current_player)
         choice = input("Enter number or 'n' to next player>> ")
+
     if choice == 'n':
         next_move()
         return True
-    
     elif choice == "0":
         input("You already draw a card!!!")
         next_move()
