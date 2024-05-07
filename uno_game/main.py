@@ -113,7 +113,7 @@ while True:
         continue
 
     if player_card.type == CARD.ACTION:
-
+        
         if player_card.body == CARD.ACTION_SKIP_BODY:
             game.reconstruct_order(action_type=CARD.ACTION_SKIP_BODY)
             game.reset_turn() # turn=0
